@@ -13,7 +13,7 @@ public class Carro {
         while(true){
             System.out.println("Você entrou no controlador de marcha!\n");
             System.out.println("Escolha uma das opções a seguir");
-            System.out.println("1- Setar sua marcha\n2- Aumentar sua marcha\n3- Diminuir sua marcha\n4- Verificar em qual posição sua marcha está engatada\n5- Sair do controle de marcha\n");
+            System.out.println("1- Setar sua marcha\n2- Aumentar sua marcha\n3- Diminuir sua marcha\n4- Verificar em qual posição sua marcha está engatada\n5- Verificar o movimento do carro\n6- Sair do controle de marcha\n");
             System.out.printf("Opção: ");
             
             int opcao = leitor.nextInt();
@@ -37,6 +37,8 @@ public class Carro {
                     break;
                 case 5:
                     marcha1.movimentoDoCarro();
+                    break;
+                case 6:
                     break;
                 default:
                     System.out.println("Opção incorreta, digite novamente...\n");
